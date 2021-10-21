@@ -36,13 +36,18 @@
     </header>
     <!--Contenido principal-->
     <main id="contenido-principal">
-        <form id="formulario" action="#">
+        <form id="formulario" action="#" method="get">
             <h2 class="subtitulo">Se parte de TECLA</h2>
-            <input type="text" placeholder="Ingresa tu nombre" required>
-            <input type="password" placeholder="Ingresa tu contraseña" required>
-            <input type="email" placeholder="Ingresa tu correo" required>
-            <input type="text" placeholder="Ciudad" required>
-            <input type="text" placeholder="Pais" required>
+            <input name="nombre" type="text" placeholder="Ingresa tu nombre" required>
+            <input name="contrasena" type="password" placeholder="Ingresa tu contraseña" required>
+            <input name="correo" type="email" placeholder="Ingresa tu correo" required>
+            <input name="ciudad" type="text" placeholder="Ciudad" required>
+            <input name="pais" type="text" placeholder="Pais" required>
+            <label for="genero">Seleccione su genero</label>
+            <select name="genero" id="genero">
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+            </select>
             <label for="f-nacimiento">Ingresa tu fecha de nacimiento</label>
             <input name="f-nacimiento" type="date" required>
             <canvas id="canvas" width="800" height="600"></canvas>

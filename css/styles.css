@@ -14,9 +14,10 @@ body {
 input[type="text"],
 input[type="password"],
 input[type="email"],
-input[type="date"] {
+input[type="date"],
+select {
   width: 65%;
-  margin: 0.3rem auto;
+  margin: 0.4rem auto;
   padding: 0.2rem;
 }
 
@@ -57,7 +58,7 @@ input[type="date"] {
 }
 
 #cabecera #logo h1 {
-  font-size: 3.5em;
+  font-size: 3.5rem;
   letter-spacing: 2px;
   color: #fff;
 }
@@ -99,10 +100,9 @@ input[type="date"] {
 }
 
 /*Contenido Principal*/
-#contenido-principal{
-    background:linear-gradient(to top right, rgb(15, 15, 253), white);
+#contenido-principal {
+  background: linear-gradient(to top right, rgb(15, 15, 253), white);
 }
-
 
 /*Pie de pagina*/
 #pie-p {
@@ -113,6 +113,8 @@ input[type="date"] {
   justify-content: center;
   padding: 2rem;
 }
+
+/****************Inicio de sesion******************/
 
 /****************Pagina Registro******************/
 #contenido-principal #formulario {
@@ -140,7 +142,7 @@ input[type="date"] {
   background: url(../img/fondo-usuario.jpg);
   background-size: cover;
   background-position: center center;
-  margin: 0 auto;
+  margin: 0.4rem auto;
   width: 50%;
 }
 
@@ -149,4 +151,66 @@ input[type="file"] {
   width: 70%;
   margin: 0.5rem auto;
   padding: 0.2rem;
+}
+
+/************Responsive*************/
+@media (max-width: 1005px) {
+  #cabecera #logo h1 {
+    font-size: 3rem;
+  }
+
+  #cabecera #logo p {
+    font-size: 1.5rem;
+  }
+  #menu ul{
+      justify-content:space-around;
+  }
+#contenido-principal #formulario{
+    width: 50%;
+}
+  #contenido-principal #formulario .subtitulo{
+      text-align:center;
+  }
+}
+
+@media (max-width: 790px) {
+  #cabecera #logo h1 {
+    font-size: 2.5rem;
+  }
+
+  #cabecera #logo p {
+    font-size: 1.3rem;
+  }
+  #menu ul{
+      justify-content:space-around;
+  }
+#contenido-principal #formulario{
+    width: 50%;
+}
+  #contenido-principal #formulario .subtitulo{
+      text-align:center;
+  }
+}
+
+@media (max-width: 650px) {
+  #cabecera #logo h1 {
+    font-size: 2rem;
+  }
+
+  #cabecera #logo p {
+    font-size: 1.3rem;
+  }
+  #menu ul{
+      justify-content:space-around;
+  }
+#contenido-principal #formulario{
+    width: 60%;
+}
+  #contenido-principal #formulario .subtitulo{
+      text-align:center;
+  }
+}
+
+@media (max-width: 493px){
+   
 }
