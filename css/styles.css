@@ -16,7 +16,7 @@ input[type="password"],
 input[type="email"],
 input[type="date"],
 select {
-  width: 65%;
+  width: 80%;
   margin: 0.4rem auto;
   padding: 0.2rem;
 }
@@ -120,7 +120,7 @@ select {
 #contenido-principal #formulario {
   display: flex;
   background: linear-gradient(to bottom right, rgb(15, 15, 253), white);
-  width: 30%;
+  width: 50%;
   flex-wrap: wrap;
   margin: 2rem auto;
   padding: 10px;
@@ -136,6 +136,8 @@ select {
 #contenido-principal #formulario label {
   margin: 0.5rem auto;
   font-size: 1.2rem;
+  width:50%;
+  text-align: center;
 }
 
 #contenido-principal #formulario #canvas {
@@ -185,7 +187,7 @@ input[type="file"] {
       justify-content:space-around;
   }
 #contenido-principal #formulario{
-    width: 50%;
+    width: 60%;
 }
   #contenido-principal #formulario .subtitulo{
       text-align:center;
@@ -204,13 +206,10 @@ input[type="file"] {
       justify-content:space-around;
   }
 #contenido-principal #formulario{
-    width: 60%;
+    width: 70%;
 }
   #contenido-principal #formulario .subtitulo{
       text-align:center;
   }
 }
 
-@media (max-width: 493px){
-   
-}
